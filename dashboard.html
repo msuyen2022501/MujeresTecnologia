@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mujeres en Tecnología - Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="mobile-container">
+      <div class="status-bar">
+        <div class="status-time">9:41</div>
+        <div class="status-icons">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-full"></i>
+        </div>
+      </div>
+
+      <div class="dashboard-content">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Buscar" />
+        </div>
+
+        <h2>Anuncios</h2>
+        <div class="slide">
+          <div class="slide-inner">
+            <!-- Primer anuncio -->
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-1"
+              name="slide"
+              aria-hidden="true"
+              hidden
+              checked="checked"
+            />
+            <div class="slide-item">
+              <a href="Quieressabermassobrecomputación.html">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaKiqAVbplC1ocHBwX0e2EdcsFdrEckvw1AA&s"
+                  alt="Quieres saber mas sobre computación?"
+                />
+                <div class="slide-text">
+                  Quieres saber mas sobre computación?
+                </div>
+              </a>
+            </div>
+            <!-- Segundo anuncio -->
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-2"
+              name="slide"
+              aria-hidden="true"
+              hidden
+            />
+            <div class="slide-item">
+              <a href="lenguajes.html">
+                <img
+                  src="https://img.freepik.com/vector-gratis/computadora-portatil-icono-isometrico-codigo-programa-desarrollo-software-aplicaciones-programacion-neon-oscuro_39422-971.jpg?t=st=1741049181~exp=1741052781~hmac=11fff11b7924b3dc762254c0e1354a068d9eddaeff0824d1626037196c53e889&w=996"
+                  alt="lenguajes"
+                />
+                <div class="slide-text">
+                  Domina los lenguajes más usados en la industria
+                </div>
+              </a>
+            </div>
+            <!-- Tercer anuncio -->
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-3"
+              name="slide"
+              aria-hidden="true"
+              hidden
+            />
+            <div class="slide-item">
+              <a href="historias.html">
+                <img
+                  src="https://img.freepik.com/vector-gratis/pagina-destino-sitio-web_23-2147774375.jpg?t=st=1741049221~exp=1741052821~hmac=95eeb813571b82b7f11dc45a2cef049541c40b495e42de2b144a57b003935668&w=740"
+                  alt="historias"
+                />
+                <div class="slide-text">
+                  Descubre historias inspiradoras y conviértete en parte del
+                  cambio.
+                </div>
+              </a>
+            </div>
+
+            <!-- Controles de navegación -->
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+
+            <!-- Indicadores -->
+            <ol class="slide-indicador">
+              <li>
+                <label for="slide-1" class="slide-circulo">•</label>
+              </li>
+              <li>
+                <label for="slide-2" class="slide-circulo">•</label>
+              </li>
+              <li>
+                <label for="slide-3" class="slide-circulo">•</label>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Sección de Cursos -->
+<h2>Cursos</h2>
+<div class="slide">
+  <div class="slide-inner">
+    <!-- Primer curso -->
+    <input
+      class="slide-open"
+      type="radio"
+      id="curso-slide-1"
+      name="curso-slide"
+      aria-hidden="true"
+      hidden
+      checked="checked"
+    />
+    <div class="slide-item">
+      <a href="TuPrimerCodigo.html">
+        <img
+          src="https://img.freepik.com/vector-gratis/pagina-web_1300-265.jpg?t=st=1741050832~exp=1741054432~hmac=b3d0fefac380f4a5c0ddd4f685e5c611096ead5071694fc441663ca10c5fd8b4&w=740"
+          alt="TuPrimerCodigo"
+        />
+        <div class="slide-text">Programación Básica: Tu Primer Código</div>
+      </a>
+    </div>
+
+    <!-- Segundo curso -->
+    <input
+      class="slide-open"
+      type="radio"
+      id="curso-slide-2"
+      name="curso-slide"
+      aria-hidden="true"
+      hidden
+    />
+    <div class="slide-item">
+      <a href="DesarolloWeb.html">
+        <img
+          src="https://img.freepik.com/vector-gratis/concepto-colorido-diseno-web-diseno-plano_23-2147952261.jpg?t=st=1741050915~exp=1741054515~hmac=7086aa0152103128c01045f42ece71347e0f7aebd6d9e07e5610d0b82fa491ad&w=740"
+          alt="DesarolloWeb"
+        />
+        <div class="slide-text">Desarrollo Web: Crea tu Propio Espacio Digital</div>
+      </a>
+    </div>
+
+    <!-- Tercer curso -->
+    <input
+      class="slide-open"
+      type="radio"
+      id="curso-slide-3"
+      name="curso-slide"
+      aria-hidden="true"
+      hidden
+    />
+    <div class="slide-item">
+      <a href="pagina3.html">
+        <img
+          src="https://img.freepik.com/vector-gratis/concepto-seguridad-cibernetica_53876-93472.jpg?t=st=1741050984~exp=1741054584~hmac=5ed019e8da6bd447afbd3fc0e367de5b85d61ed71ed9a56ce2c5cc4f49289475&w=1060"
+          alt="Ciberseguridad"
+        />
+        <div class="slide-text">Aprende de qué trata la ciberseguridad</div>
+      </a>
+    </div>
+
+    <!-- Controles de navegación -->
+    <label for="curso-slide-3" class="slide-control prev control-curso-1">‹</label>
+    <label for="curso-slide-2" class="slide-control next control-curso-1">›</label>
+    <label for="curso-slide-1" class="slide-control prev control-curso-2">‹</label>
+    <label for="curso-slide-3" class="slide-control next control-curso-2">›</label>
+    <label for="curso-slide-2" class="slide-control prev control-curso-3">‹</label>
+    <label for="curso-slide-1" class="slide-control next control-curso-3">›</label>
+
+    <!-- Indicadores -->
+    <ol class="slide-indicador">
+      <li><label for="curso-slide-1" class="slide-circulo">•</label></li>
+      <li><label for="curso-slide-2" class="slide-circulo">•</label></li>
+      <li><label for="curso-slide-3" class="slide-circulo">•</label></li>
+    </ol>
+  </div>
+</div>
+
+<h2>Eventos</h2>
+<div class="slide">
+  <div class="slide-inner">
+    <input
+      class="slide-open"
+      type="radio"
+      id="evento-slide-1"
+      name="evento-slide"
+      aria-hidden="true"
+      hidden
+      checked="checked"
+    />
+    <div class="slide-item">
+      <a href="Foro1.html">
+        <img
+          src="https://img.freepik.com/vector-gratis/ilustracion-personaje-personas-burbujas-discurso_53876-43081.jpg?t=st=1741053955~exp=1741057555~hmac=26061b7be84a824cd4445ce7b5766de82c5b7f165d62935427f76be8d6845525&w=900"
+          alt="Foro1"
+        />
+        <div class="slide-text">Mujeres en Tecnología: Rompiendo Barreras</div>
+      </a>
+    </div>
+
+    <input
+      class="slide-open"
+      type="radio"
+      id="evento-slide-2"
+      name="evento-slide"
+      aria-hidden="true"
+      hidden
+    />
+    <div class="slide-item">
+      <a href="Foro2.html">
+        <img
+          src="https://img.freepik.com/vector-premium/diseno-vectorial-redes-sociales_23-2147493200.jpg?w=740"
+          alt="Foro2"
+        />
+        <div class="slide-text">Mujeres en Código: Jornada de Programación y Networking</div>
+      </a>
+    </div>
+
+    <input
+      class="slide-open"
+      type="radio"
+      id="evento-slide-3"
+      name="evento-slide"
+      aria-hidden="true"
+      hidden
+    />
+    
+    <!-- Controles de navegación -->
+    <label for="evento-slide-3" class="slide-control prev control-evento-1">‹</label>
+    <label for="evento-slide-2" class="slide-control next control-evento-1">›</label>
+    <label for="evento-slide-1" class="slide-control prev control-evento-2">‹</label>
+    <label for="evento-slide-3" class="slide-control next control-evento-2">›</label>
+    <label for="evento-slide-2" class="slide-control prev control-evento-3">‹</label>
+    <label for="evento-slide-1" class="slide-control next control-evento-3">›</label>
+
+    <!-- Indicadores -->
+    <ol class="slide-indicador">
+      <li><label for="evento-slide-1" class="slide-circulo">•</label></li>
+      <li><label for="evento-slide-2" class="slide-circulo">•</label></li>
+    </ol>
+  </div>
+</div>
+      </div>
+    </div>
+  </body>
+</html>

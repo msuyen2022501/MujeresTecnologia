@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mujeres en Tecnología - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Enlace a Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+        integrity="sha512-3CzNRSYhcStD8y/KnJwC62C7llM8S9W1+eCXn4Zh6j6ifJfB73uV6jnlt5R1lTTYFJ/Hr6v+afBkFv/gkm3GFQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <table class="mobile-container">
+   
+    <tr>
+      <td>
+        <table width="100%">
+          <tr>
+            <td class="status-time" style="vertical-align: top;">9:41</td>
+            <td class="status-icons" align="right" style="vertical-align: top;">
+              <i class="fa-solid fa-signal"></i>
+              <i class="fa-solid fa-wifi"></i>
+              <i class="fa-solid fa-battery-full"></i>
+            </td>
+          </tr>
+          <tr>
+            <td><br/><br/></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <h2>Mujeres en Tecnología</h2>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="login-content">
+        <table width="100%">
+          <tr>
+            <td align="center">
+              <p>Ingresa con tu correo institucional y número de carnet</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <input type="text" class="shine" placeholder="someone@uvg.edu.gt" id="email">
+              <div id="email-error" style="color:red; display:none; font-size:14px;">
+                El correo debe terminar con @uvg.edu.gt.
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <input type="text" class="shine" placeholder="Carnet" id="carnet">
+              <div id="carnet-error" style="color:red; display:none; font-size:14px;">
+                Ingrese un número de carnet válido (5 dígitos).
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <button id="login-btn" class="btn-17">
+                <span class="text-container">
+                  <span class="text">Continuar</span>
+                </span>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const loginBtn = document.getElementById("login-btn");
+
+      loginBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        
+        const emailInput = document.getElementById("email");
+        const carnetInput = document.getElementById("carnet");
+        const emailError = document.getElementById("email-error");
+        const carnetError = document.getElementById("carnet-error");
+        
+        const emailValue = emailInput.value.trim();
+        const carnetValue = carnetInput.value.trim();
+        
+        let isValid = true;
+        
+        if (!emailValue.endsWith("@uvg.edu.gt")) {
+          emailError.style.display = "block";
+          emailInput.value = ""; 
+          isValid = false;
+        } else {
+          emailError.style.display = "none";
+        }
+        
+        if (!/^\d{5}$/.test(carnetValue)) {
+          carnetError.style.display = "block";
+          carnetInput.value = ""; 
+          isValid = false;
+        } else {
+          carnetError.style.display = "none";
+        }
+        
+        if (isValid) {
+          window.location.href = "dashboard.html";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
